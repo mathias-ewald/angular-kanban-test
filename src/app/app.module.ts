@@ -4,9 +4,10 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { KanbanBoardModule } from './kanban/kanban.module';
+import { DragDropModule } from '@angular/cdk/drag-drop';
 
 @NgModule({
-  imports: [BrowserModule, FormsModule, KanbanBoardModule],
+  imports: [BrowserModule, FormsModule, KanbanBoardModule, DragDropModule],
   declarations: [AppComponent],
   bootstrap: [AppComponent],
 })
