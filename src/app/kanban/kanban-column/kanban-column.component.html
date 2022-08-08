@@ -1,0 +1,7 @@
+<div class="kanban-header-wrapper">
+    <ng-content select="kanban-column-header"></ng-content>
+</div>
+
+<div class="kanban-content-wrapper" cdkDropList (cdkDropListDropped)="drop($event)">
+    <ng-content select="kanban-card"></ng-content>
+</div>
